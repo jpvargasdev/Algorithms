@@ -3,11 +3,11 @@ Algorithms examples with Kotlin, JavaScript, Python
 
 Algorithms covered
 
-# Sorting
+## Sorting
 
 - Bubble Sort
 - Selection Sort
 
-# Searching
+## Searching
 
 - Search duplicate item in array
