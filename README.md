@@ -5,9 +5,9 @@ Algorithms covered
 
 # Sorting
 
-Bubble Sort
-Selection Sort
+- Bubble Sort
+- Selection Sort
 
 # Searching
 
-Search duplicate item in array
+- Search duplicate item in array
