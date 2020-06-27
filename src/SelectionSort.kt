@@ -1,11 +1,10 @@
 /**
  * Selection Sort function O(N^2 / 2)
  */
-fun selectionSort(list: Array<Int>) {
-    val listSize = list.size
-    for (i in 0 until listSize) {
+fun selectionSort(list: Array<Int>) : Array<Int> {
+    for (i in list.indices) {
         var lowerNumberIndex : Int = i
-        for (j in i until listSize) {
+        for (j in i until list.size) {
             if (list[j] < list[lowerNumberIndex]) {
                 lowerNumberIndex = j
             }
@@ -17,4 +16,6 @@ fun selectionSort(list: Array<Int>) {
             list[lowerNumberIndex] = temp
         }
     }
+
+    return list
 }

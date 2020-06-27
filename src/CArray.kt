@@ -27,10 +27,10 @@ class CArray(private val numElements : Int = 100) {
         this.dataStore[this.pos] = element
     }
 
-    fun getString(): String {
+    fun getString(array: Array<Int>): String {
         var retstr = ""
-        for (i in this.dataStore.indices) {
-            retstr += this.dataStore[i].toString() + " "
+        for (i in array.indices) {
+            retstr += array[i].toString() + " "
             if (i > 0 && i % 10 == 0) {
                 retstr += "\n"
             }

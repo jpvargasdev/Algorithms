@@ -14,7 +14,7 @@ class CArray {
     for (let i = 0; i < this.numElements; ++i) {
       this.dataStore[i] = Math.floor(
           Math.random()
-          * (this.numElements + 1)
+          * (200)
         );
     }
   }

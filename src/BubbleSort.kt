@@ -1,7 +1,7 @@
 /**
- * Bubble Sort function O(N^2)
+ * Bubble Sort function O(N^2) - O(N)
  */
-fun bubbleSort(list : Array<Int>) {
+fun bubbleSort(list : Array<Int>) : Array<Int>{
     var unsortedUntilIndex : Int = list.size - 1
     var isSorted = false
 
@@ -17,4 +17,6 @@ fun bubbleSort(list : Array<Int>) {
         }
         unsortedUntilIndex -= 1
     }
+
+    return list
 }

@@ -13,7 +13,7 @@ class CArray:
   def set_data(self):
     seed(1)
     for i in range(self.num_elements):
-      self.data_store[i] = randint(0, 99)
+      self.data_store[i] = randint(0, 200)
 
   def clear(self):
     for i in range(len(self.data_store)):
