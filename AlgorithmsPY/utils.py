@@ -1,7 +1,7 @@
 from random import seed
 from random import randint
 
-class CArray:
+class algorithms.CArray:
   def __init__(self, num_elements = 100):
     self.data_store = [0] * num_elements
     self.pos = 0

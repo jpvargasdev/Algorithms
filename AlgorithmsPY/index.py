@@ -1,11 +1,11 @@
-from utils import CArray
+from utils import algorithms.CArray
 
 from selection_sort import selection_sort
 from bubble_sort import bubble_sort
 from insertion_sort import insertion_sort
 from quick_sort import QuickSort
 
-list = CArray(40)
+list = algorithms.CArray(20)
 list.set_data()
 
 print('///// ARRAY TO ORDER /////')

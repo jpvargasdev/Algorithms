@@ -25,7 +25,10 @@ class SortableArray {
         rightPointer -= 1;
       }
 
-      if (leftPointer >= rightPointer) break;
+      if (
+        leftPointer >= this.array.length
+        || rightPointer >= this.array.length
+      ) break;
 
       this.swap(leftPointer, rightPointer);
     }
@@ -35,13 +38,19 @@ class SortableArray {
     return leftPointer;
   }
 
-  quickSort(leftIndex, rightIndex) {
+  quickSelect(lowestValue, leftIndex, rightIndex) {
 
-    if(rightIndex - leftIndex <= 0) return;
+    if(rightIndex - leftIndex <= 0) return this.array[leftIndex];
 
     const pivotPosition = this.setPartition(leftIndex, rightIndex);
-    this.quickSort(leftIndex, pivotPosition - 1);
-    this.quickSort(pivotPosition + 1, rightIndex);
+
+    if (lowestValue < pivotPosition) {
+      this.quickSelect(lowestValue, leftIndex, pivotPosition - 1);
+    } else if (lowestValue > pivotPosition) {
+      this.quickSelect(lowestValue, pivotPosition + 1, rightIndex);
+    } else {
+      return this.array[pivotPosition];
+    }
   }
 }
 
